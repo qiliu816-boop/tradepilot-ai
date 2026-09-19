@@ -6,292 +6,360 @@ V0.1
 
 ## Current Stage
 
-Home Page Development
+Analysis Input Page Development
 
 ## Objective
 
-Build the first polished public-facing Home page for TradePilot AI.
+Build the TradePilot market analysis input experience.
 
-The page should immediately help a recruiter or potential user understand:
+The page should allow a user to define:
 
-1. what TradePilot is,
-2. what problem it solves,
-3. how the product works,
-4. why its AI analysis is more trustworthy than a generic chatbot,
-5. how to start the demo.
+1. the product,
+2. the target market,
+3. basic business inputs,
+4. the market evidence used for analysis.
+
+This is a portfolio demo.
+
+Use realistic default values so a recruiter can immediately test the complete flow without manually entering everything.
 
 ---
 
 ## Page Goal
 
-The Home page should feel like a modern B2B SaaS analytics product.
+The page should feel like a structured market research brief, not a generic form.
 
-It should be professional, clean, data-focused, and suitable for an AI product portfolio.
+The user should understand:
 
-Do not make it look like:
-
-- a generic AI chatbot
-- a crypto website
-- a consumer shopping app
-- an overly decorative landing page
+"What product am I analysing?"
+"Where do I want to sell it?"
+"What are my commercial assumptions?"
+"What evidence will TradePilot use?"
 
 ---
 
-## Navigation
+## Page Header
 
-Create a simple top navigation.
+Eyebrow:
 
-Left:
-
-TradePilot AI
-
-Right:
-
-- Product
-- How It Works
-- Evidence
-- Start Analysis
-
-The "Start Analysis" item should visually function as the primary navigation CTA.
-
----
-
-## Hero Section
-
-### Eyebrow
-
-AI-powered cross-border market intelligence
-
-### Main Heading
-
-Make smarter cross-border market decisions with evidence.
-
-### Supporting Text
-
-TradePilot turns fragmented competitor data, pricing signals and customer feedback into structured, evidence-backed market insights.
-
-### Primary CTA
-
-Start Market Analysis
-
-Route:
-
-/analysis
-
-### Secondary CTA
-
-Explore How It Works
-
-This should scroll to the workflow section.
-
----
-
-## Hero Visual
-
-Do not use a stock image.
-
-Create a product-style analytics preview using UI components.
-
-The preview should visually suggest a market opportunity report.
-
-Example content:
-
-Market Opportunity
-
-Women's Commuter Tote Bag
-
-Malaysia · TikTok Shop
-
-Opportunity Signal:
-Promising
-
-Data points:
-
-12 Competitors
-326 Reviews
-RM49–RM129 Price Range
-
-Include small visual labels demonstrating:
-
-DATA FACT
-
-and
-
-AI INFERENCE
-
-The hero visual should help communicate that TradePilot is an analytics product, not a chatbot.
-
----
-
-## Problem Section
+TRADEPILOT AI · MARKET ANALYSIS
 
 Heading:
 
-Cross-border market research is fragmented.
-
-Supporting copy:
-
-Sellers often switch between marketplace listings, competitor pricing, customer reviews and spreadsheets before they can make a market decision.
-
-Show three problem cards:
-
-### Fragmented Data
-
-Competitor prices, reviews and product signals are scattered across multiple sources.
-
-### Slow Manual Research
-
-Market research requires repetitive collection, comparison and summarisation.
-
-### Unclear Decisions
-
-Raw information does not automatically translate into pricing, positioning or market-entry decisions.
-
----
-
-## Solution / Capabilities Section
-
-Heading:
-
-From scattered information to structured decisions.
-
-Create three capability cards.
-
-### Market Opportunity
-
-Understand pricing ranges, demand signals and potential market-entry opportunities.
-
-### Competitor Intelligence
-
-Compare competitor positioning, pricing and customer feedback in one structured view.
-
-### Evidence-backed AI
-
-See what comes from the data and what is generated as AI interpretation.
-
----
-
-## How It Works Section
-
-Heading:
-
-Market research in four steps.
-
-Create a four-step workflow:
-
-### 01 — Define
-
-Enter the product, target market and business goal.
-
-### 02 — Analyse
-
-TradePilot structures competitor, pricing and customer evidence.
-
-### 03 — Interpret
-
-AI converts evidence into market opportunities, risks and business insights.
-
-### 04 — Act
-
-Receive clear recommendations for pricing, positioning and market validation.
-
----
-
-## Evidence Mechanism Section
-
-This is the most important differentiation section.
-
-Heading:
-
-AI insights you can trace back to evidence.
-
-Supporting copy:
-
-TradePilot separates observable market evidence from AI interpretation, helping users understand how conclusions are formed.
-
-Show a visual comparison.
-
-### DATA FACT
-
-Median competitor price
-
-RM79
-
-Source:
-12 competitor products
-
-### AI INFERENCE
-
-RM79 may represent a viable mid-market entry price.
-
-Reasoning:
-The price sits near the observed market median while leaving room to differentiate through product features.
-
-Include a small explanatory note:
-
-Important recommendations should be supported by observable evidence, while limitations and uncertainty remain visible.
-
----
-
-## Final CTA Section
-
-Heading:
-
-Explore a market before making the decision.
+Set up your market analysis.
 
 Supporting text:
 
-Run the TradePilot demo and see how fragmented market information becomes a structured opportunity report.
+Define the product, target market and business context TradePilot should evaluate.
+
+Include a small progress indicator:
+
+01 Input
+02 Analyse
+03 Report
+
+Highlight Input as the current step.
+
+---
+
+## Layout
+
+Use a desktop two-column layout.
+
+Left / Main Column:
+
+Input form.
+
+Right Column:
+
+Analysis Summary / Research Brief.
+
+The right-side summary should update visually based on the current form values where reasonable.
+
+On mobile, stack the sections vertically.
+
+---
+
+## Section 1 — Product
+
+Card title:
+
+Product
+
+Supporting text:
+
+Tell TradePilot what product you want to evaluate.
+
+Fields:
+
+### Product Name
+
+Default:
+
+Women's Commuter Tote Bag
+
+### Category
+
+Default:
+
+Bags & Accessories
+
+Suggested options:
+
+- Bags & Accessories
+- Beauty & Personal Care
+- Home & Living
+- Consumer Electronics
+- Fashion
+- Other
+
+### Product Description
+
+Default:
+
+Lightweight waterproof tote bag designed for commuting, daily use and laptop storage.
+
+Use a textarea.
+
+---
+
+## Section 2 — Target Market
+
+Card title:
+
+Target Market
+
+Fields:
+
+### Country / Market
+
+Default:
+
+Malaysia
+
+Suggested options:
+
+- Malaysia
+- Singapore
+- Thailand
+- Indonesia
+- Philippines
+- Vietnam
+
+### Platform
+
+Default:
+
+TikTok Shop
+
+Suggested options:
+
+- TikTok Shop
+- Shopee
+- Lazada
+- Amazon
+- Independent Store
+
+### Currency
+
+Default:
+
+MYR
+
+Currency may update automatically based on the selected default market, but keep the implementation simple.
+
+---
+
+## Section 3 — Business Inputs
+
+Card title:
+
+Business Context
+
+Supporting text:
+
+Provide basic commercial assumptions for this market test.
+
+Fields:
+
+### Estimated Product Cost
+
+Default:
+
+35
+
+Prefix:
+
+RM
+
+### Target Selling Price
+
+Default:
+
+79
+
+Prefix:
+
+RM
+
+### Business Goal
+
+Use selectable cards or radio-style options.
+
+Options:
+
+- Market Entry
+- Product Validation
+- Pricing Strategy
+
+Default:
+
+Market Entry
+
+---
+
+## Section 4 — Market Evidence
+
+Card title:
+
+Market Evidence
+
+Supporting text:
+
+TradePilot uses market evidence to support its analysis.
+
+For V0.1, do not implement real file processing.
+
+Instead show a preloaded demo dataset.
+
+Display:
+
+Sample Market Dataset
+
+Status:
+
+Ready
+
+Dataset summary:
+
+12 competitor products
+
+326 customer reviews
+
+Observed price range:
+RM49–RM129
+
+Source context:
+TikTok Shop Malaysia
+
+Add a small label:
+
+DEMO DATASET
+
+Add supporting text:
+
+This V0.1 demo uses a curated mock dataset to demonstrate the analysis workflow.
+
+Do not build real upload functionality yet.
+
+You may visually show a disabled or secondary:
+
+Upload your own dataset
+
+control with a label:
+
+Coming in V0.2
+
+but it must not become part of the active workflow.
+
+---
+
+## Right-side Research Brief
+
+Create a summary card titled:
+
+Research Brief
+
+Show:
+
+Product
+
+Women's Commuter Tote Bag
+
+Market
+
+Malaysia
+
+Platform
+
+TikTok Shop
+
+Target Price
+
+RM79
+
+Goal
+
+Market Entry
+
+Evidence
+
+12 competitors · 326 reviews
+
+At the bottom show:
+
+Ready for analysis
+
+This panel should make the page feel like a professional analytics product rather than a standard web form.
+
+---
+
+## Primary CTA
 
 Button:
 
-Start Market Analysis
+Generate Market Report
 
-Route:
+On click:
 
-/analysis
+Navigate to:
 
----
+/loading
 
-## Footer
+The button should be visually prominent.
 
-Keep the footer minimal.
+Below it show a small message:
 
-TradePilot AI
-
-AI-powered cross-border market research assistant.
-
-Portfolio Project · V0.1
+TradePilot will analyse the demo evidence and generate an evidence-backed opportunity report.
 
 ---
 
-## Design Direction
+## Secondary Navigation
 
-The design should feel like a modern B2B SaaS analytics platform.
+Include:
 
-Use:
+Back to Home
 
-- generous whitespace
-- clear visual hierarchy
-- restrained professional colours
-- cards with subtle borders
-- clean typography
-- consistent spacing
-- subtle shadows where useful
-- professional data visualisation aesthetics
+Do not add unnecessary buttons.
 
-A blue / navy / neutral visual direction is preferred.
+---
 
-Avoid:
+## Validation
 
-- excessive gradients
-- neon colours
-- glassmorphism everywhere
-- excessive animation
-- oversized decorative icons
-- stock photography
-- generic robot imagery
-- unnecessary illustrations
+Keep validation lightweight.
+
+Required:
+
+- Product Name
+- Target Market
+- Platform
+- Product Cost
+- Target Selling Price
+- Business Goal
+
+Do not build a complex validation library.
+
+Simple client-side validation is enough.
 
 ---
 
@@ -300,11 +368,28 @@ Avoid:
 The page must:
 
 - work on desktop and mobile
-- have clear CTA hierarchy
-- scroll smoothly between sections
-- link Start Market Analysis to `/analysis`
-- preserve the existing application routing
-- use reusable components where reasonable
+- use the existing TradePilot visual system
+- feel consistent with the Home page
+- preserve all existing routes
+- allow the default demo scenario to be submitted immediately
+- route Generate Market Report to `/loading`
+
+Do not require users to manually fill the form before testing the demo.
+
+---
+
+## Product Principle
+
+The page should reinforce that TradePilot analyses a structured business question.
+
+Avoid making it feel like:
+
+- a generic AI prompt box
+- a chatbot
+- a long survey
+- a complex enterprise form
+
+The interaction should feel simple, guided and decision-oriented.
 
 ---
 
@@ -312,16 +397,16 @@ The page must:
 
 Do not:
 
-- build the Analysis Input page
-- build the Market Report page
-- connect APIs
+- connect an API
+- upload real files
+- parse CSV files
 - connect an LLM
-- add a database
-- add authentication
-- add external backend services
-- redesign unrelated routes
+- build a database
+- build authentication
+- build the final Market Report
+- build complex state management
 
-Only build the Home page and any small reusable UI components required by the Home page.
+Use local frontend state only where necessary.
 
 ---
 
@@ -329,26 +414,32 @@ Only build the Home page and any small reusable UI components required by the Ho
 
 The task is complete when:
 
-- Home page has all required sections
-- visual hierarchy is polished
-- mobile layout is usable
-- Start Market Analysis correctly opens `/analysis`
-- How It Works navigation works
-- existing routes are not broken
+- the Analysis Input page contains all four input sections
+- realistic default demo values are populated
+- the Research Brief summary is visible
+- Generate Market Report routes to `/loading`
+- the page works on mobile
+- the Home page remains unchanged
+- all four application routes remain functional
 - TypeScript checks pass
 - production build passes
+- the page renders correctly in the browser without blocking Console errors
 
 ---
 
 ## After Completion
 
-1. Run the relevant checks.
-2. Update `CHANGELOG.md`.
-3. Summarize:
+1. Run TypeScript checks.
+2. Run the production build.
+3. Perform a browser runtime smoke test.
+4. Verify `/analysis` renders correctly.
+5. Verify Generate Market Report opens `/loading`.
+6. Update CHANGELOG.md.
+7. Summarize:
    - what changed
    - files modified
-   - how to test
+   - checks performed
    - remaining issues
-4. Stop.
+8. Stop.
 
-Do not automatically begin the Analysis Input page.
+Do not automatically begin the Loading page.
