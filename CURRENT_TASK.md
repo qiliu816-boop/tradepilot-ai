@@ -6,66 +6,30 @@ V0.1
 
 ## Current Stage
 
-AI Analysis Loading Page Development
+Market Report Page Development
 
 ## Objective
 
-Build the TradePilot AI analysis loading experience.
+Build the TradePilot evidence-backed Market Report.
 
-The page should visually communicate how TradePilot transforms structured business inputs and market evidence into an evidence-backed market report.
+This is the core output page of the V0.1 demo.
 
-This page is not a generic loading spinner.
+The report should turn the demo market evidence into a structured business decision view.
 
-It should demonstrate the product's AI workflow.
+The page must clearly distinguish:
 
----
+- observable market facts
+- supporting evidence
+- AI interpretation
+- recommended business actions
 
-## Page Goal
-
-The user should understand:
-
-1. what TradePilot is analysing,
-2. which stage of analysis is currently happening,
-3. how evidence is processed before AI interpretation,
-4. that the final report will distinguish data facts from AI inference.
-
-The page should feel like a professional analytics workflow.
+The page should feel like a professional B2B market intelligence report, not a generic AI response.
 
 ---
 
-## Header
+## Demo Scenario
 
-Eyebrow:
-
-TRADEPILOT AI · MARKET ANALYSIS
-
-Heading:
-
-Analysing your market opportunity.
-
-Supporting text:
-
-TradePilot is structuring market evidence, identifying customer signals and generating evidence-backed business insights.
-
----
-
-## Progress Indicator
-
-Show the existing three-stage product flow:
-
-01 Input
-02 Analyse
-03 Report
-
-Highlight:
-
-02 Analyse
-
----
-
-## Analysis Summary
-
-Show a compact summary of the demo scenario:
+Use the existing V0.1 demo scenario.
 
 Product:
 Women's Commuter Tote Bag
@@ -76,180 +40,655 @@ Malaysia
 Platform:
 TikTok Shop
 
-Goal:
+Business Goal:
 Market Entry
 
+Estimated Product Cost:
+RM35
+
+Target Selling Price:
+RM79
+
 Evidence:
-12 competitors · 326 reviews
+12 competitor products
+326 customer reviews
 
-This can appear as a compact horizontal card or small panel.
+Observed Price Range:
+RM49–RM129
 
----
-
-## AI Workflow
-
-Create five analysis stages.
-
-### Stage 1 — Reading Market Evidence
-
-Supporting text:
-
-Reviewing competitor products, prices and customer feedback.
-
-Status:
-Complete
+This is curated mock data for demonstration.
 
 ---
 
-### Stage 2 — Extracting Customer Signals
+## Page Header
 
-Supporting text:
+Eyebrow:
 
-Identifying recurring customer needs, pain points and purchase signals.
+TRADEPILOT AI · MARKET REPORT
 
-Status:
-Complete
+Heading:
 
----
+Market Opportunity Report
 
-### Stage 3 — Comparing Competitors
+Subheading:
 
-Supporting text:
+Women's Commuter Tote Bag
 
-Structuring competitor positioning, pricing and product differentiation.
+Metadata:
 
-Status:
-Processing
+Malaysia · TikTok Shop · Market Entry
 
----
+Add a small label:
 
-### Stage 4 — Evaluating Market Opportunity
+DEMO DATA
 
-Supporting text:
+Supporting note:
 
-Connecting evidence to potential pricing, positioning and market-entry opportunities.
-
-Status:
-Waiting
+This V0.1 report uses a curated mock dataset to demonstrate TradePilot's analysis workflow.
 
 ---
 
-### Stage 5 — Generating Recommendations
+## Product Progress
 
-Supporting text:
+Show:
 
-Preparing evidence-backed actions, risks and limitations.
+01 Input
+02 Analyse
+03 Report
 
-Status:
-Waiting
+Highlight:
 
----
-
-## Visual Behaviour
-
-The page should simulate analysis progress.
-
-Use frontend-only timing.
-
-Example:
-
-Stage 1 complete
-→ Stage 2 complete
-→ Stage 3 processing
-→ Stage 4 processing
-→ Stage 5 processing
-→ Analysis complete
-
-Keep the total demo loading duration approximately:
-
-4–6 seconds.
-
-Do not use real API calls.
-
-Do not introduce backend services.
+03 Report
 
 ---
 
-## Evidence Principle
+## Executive Summary
 
-Include a compact explanatory component:
+Create a prominent summary section near the top.
 
-### Evidence-first analysis
+Heading:
 
-Data facts are extracted before AI interpretation.
+Market Opportunity
 
-Example:
+Primary signal:
 
-DATA FACT
-Median competitor price: RM79
+Promising
+
+Important:
+Do not present this as a scientifically calculated score.
+
+Supporting interpretation:
+
+The product shows a viable mid-market entry opportunity, with customer demand around practical commuter features and clear differentiation opportunities in storage, durability and laptop protection.
+
+Show three compact supporting indicators:
+
+Price Position:
+Competitive
+
+Customer Demand Signals:
+Strong
+
+Competitive Intensity:
+Medium
+
+Add a short note:
+
+AI interpretation based on the demo evidence below.
+
+Clearly label this as:
 
 AI INFERENCE
-RM79 may represent a viable mid-market entry point.
-
-This should reinforce the Evidence Mechanism without duplicating the full Home page section.
 
 ---
 
-## Completion State
+# SECTION 1 — Market Snapshot
 
-When all analysis stages finish:
+Heading:
 
-Change the main status to:
+Market Snapshot
 
-Analysis complete.
+Show four primary data metrics:
+
+### Competitors
+
+12
+
+### Customer Reviews
+
+326
+
+### Observed Price Range
+
+RM49–RM129
+
+### Median Competitor Price
+
+RM79
+
+These values should be clearly labelled:
+
+DATA FACT
+
+Add a simple price landscape visual.
+
+It can be a lightweight bar / distribution style visual built with CSS.
+
+Do not add a chart library unless already installed.
+
+The visual should show competitor prices distributed between RM49 and RM129 with RM79 marked as the median.
+
+---
+
+# SECTION 2 — Customer Needs
+
+Heading:
+
+What customers value
 
 Supporting text:
 
-Your evidence-backed market opportunity report is ready.
+Recurring needs identified from the demo customer review dataset.
 
-Primary button:
+Display five customer needs.
 
-View Market Report
+Suggested mock values:
+
+### Lightweight design
+
+Mentioned in 34% of relevant reviews
+
+### Large capacity
+
+29%
+
+### Waterproof material
+
+24%
+
+### Laptop compartment
+
+21%
+
+### Comfortable shoulder straps
+
+18%
+
+Use simple horizontal bars or proportional visual indicators.
+
+Clearly label these as:
+
+DATA FACT
+
+Supporting note:
+
+Based on keyword and theme frequencies within the curated demo review dataset.
+
+---
+
+# SECTION 3 — Customer Pain Points
+
+Heading:
+
+Where customers are dissatisfied
+
+Show four recurring pain points.
+
+### Strap durability
+
+27 mentions
+
+Example review:
+
+"The bag looks good, but the shoulder strap feels weak."
+
+### Zipper quality
+
+22 mentions
+
+Example review:
+
+"The zipper became difficult to close after a few weeks."
+
+### Limited internal organisation
+
+19 mentions
+
+Example review:
+
+"I wish there were more compartments inside."
+
+### Size expectation mismatch
+
+16 mentions
+
+Example review:
+
+"It looked larger in the listing photos."
+
+Each pain point should include:
+
+- issue
+- mention count
+- one short example review
+
+Label:
+
+EVIDENCE
+
+The example reviews are mock demonstration content.
+
+Do not imply they are real live customer reviews.
+
+---
+
+# SECTION 4 — Competitor Landscape
+
+Heading:
+
+Competitor Landscape
+
+Create a professional comparison table.
+
+Columns:
+
+Product
+Price
+Rating
+Review Count
+Positioning
+Key Strength
+Key Weakness
+
+Use at least five mock competitors.
+
+Example data:
+
+### UrbanCarry Tote
+
+RM59
+4.5
+842 reviews
+Budget commuter
+Affordable and lightweight
+Limited organisation
+
+### MetroDaily Bag
+
+RM79
+4.7
+1,124 reviews
+Mid-market commuter
+Laptop protection
+Weak straps reported
+
+### Nova Work Tote
+
+RM89
+4.6
+738 reviews
+Professional
+Internal organisation
+Higher price
+
+### FlexiDay Tote
+
+RM69
+4.4
+516 reviews
+Everyday value
+Large capacity
+Average material quality
+
+### Lumi Office Tote
+
+RM109
+4.8
+623 reviews
+Premium commuter
+Material quality
+Premium pricing
+
+Clearly label table data:
+
+DATA FACT
+
+The data is mock demo data.
+
+---
+
+# SECTION 5 — Market Opportunities
+
+Heading:
+
+Market Opportunities
+
+Create three opportunity cards.
+
+Each opportunity must follow the same structure:
+
+DATA FACT
+→ AI INFERENCE
+→ BUSINESS IMPLICATION
+
+---
+
+## Opportunity 01
+
+Title:
+
+Mid-market pricing opportunity
+
+DATA FACT:
+
+Median competitor price is RM79.
+
+AI INFERENCE:
+
+The planned RM79 selling price sits at the observed market median, avoiding both deep-discount and premium positioning.
+
+BUSINESS IMPLICATION:
+
+Compete through product differentiation rather than price discounting.
+
+---
+
+## Opportunity 02
+
+Title:
+
+Functional commuter positioning
+
+DATA FACT:
+
+Laptop storage, capacity and waterproofing appear repeatedly in customer needs.
+
+AI INFERENCE:
+
+Customers may respond more strongly to practical commuter utility than to purely aesthetic positioning.
+
+BUSINESS IMPLICATION:
+
+Prioritise commuter-focused product messaging and feature presentation.
+
+---
+
+## Opportunity 03
+
+Title:
+
+Pain-point-led differentiation
+
+DATA FACT:
+
+Strap durability, zipper quality and internal organisation appear repeatedly in negative feedback.
+
+AI INFERENCE:
+
+Addressing these recurring weaknesses may create differentiation against similarly priced competitors.
+
+BUSINESS IMPLICATION:
+
+Use sourcing and product quality decisions to solve high-frequency competitor complaints.
+
+---
+
+# SECTION 6 — Risks & Limitations
+
+Heading:
+
+Risks & Limitations
+
+This section must remain visible and meaningful.
+
+Show:
+
+### Competitive Market
+
+Multiple sellers already compete in the RM59–RM109 range.
+
+### Price Sensitivity
+
+A target price of RM79 may face pressure from lower-priced alternatives.
+
+### Mock Dataset
+
+This V0.1 analysis uses curated demonstration data and does not represent live TikTok Shop conditions.
+
+### Limited Market Coverage
+
+The demo dataset covers only a small sample of competitors and reviews.
+
+### External Factors
+
+Advertising costs, fulfilment costs, creator commissions, seasonality and platform policy changes are not included in the current analysis.
+
+Use a visible label:
+
+LIMITATION
+
+Do not hide this section at the bottom in tiny text.
+
+---
+
+# SECTION 7 — Recommended Actions
+
+Heading:
+
+Recommended Actions
+
+Create four action items.
+
+Each should be concrete and commercially understandable.
+
+---
+
+### 1. Validate the RM69–RM79 price band
+
+Run a limited pricing test before moving above RM89.
+
+Reason:
+
+The target RM79 price currently sits near the observed market median.
+
+---
+
+### 2. Position around commuter utility
+
+Emphasise:
+
+- laptop protection
+- waterproof material
+- organised storage
+- lightweight design
+
+Reason:
+
+These features appear repeatedly in customer needs.
+
+---
+
+### 3. Strengthen sourcing around durability
+
+Prioritise:
+
+- strap reinforcement
+- zipper quality
+- internal compartment construction
+
+Reason:
+
+These areas appear repeatedly in negative competitor feedback.
+
+---
+
+### 4. Run a small market validation test
+
+Launch a limited initial SKU / inventory test before scaling.
+
+Track:
+
+- click-through rate
+- conversion rate
+- return rate
+- review sentiment
+- price response
+
+Reason:
+
+The current evidence indicates opportunity but is not sufficient for a full-scale inventory decision.
+
+---
+
+## Evidence Drawer / Evidence Interaction
+
+Where practical, allow important insights to expose supporting evidence.
+
+This does not need to be a complex modal system.
+
+A simple expandable section or details element is enough.
+
+Example:
+
+View Evidence
+
+When expanded:
+
+Source:
+326 demo customer reviews
+
+Relevant themes:
+Laptop storage
+Waterproofing
+Capacity
+
+Example comments:
+Short mock examples
+
+This feature should visually reinforce Traceability.
+
+Do not over-engineer it.
+
+---
+
+## Final Decision Section
+
+Near the bottom include a concise decision summary.
+
+Heading:
+
+Decision Summary
+
+Display:
+
+Market Entry Signal:
+Promising
+
+Recommended Position:
+Mid-market commuter utility
+
+Suggested Test Price:
+RM69–RM79
+
+Primary Differentiation:
+Durability + organisation + laptop protection
+
+Primary Risk:
+Price competition
+
+Next Step:
+Run a limited product validation test
+
+Clearly state:
+
+This is an AI-assisted recommendation based on the available demo evidence, not a guaranteed business outcome.
+
+---
+
+## Report Actions
+
+Include:
+
+### Start New Analysis
 
 Route:
 
-/report
+/analysis
 
-Automatically navigating to `/report` is optional.
+### Back to Home
 
-Prefer showing the button first so the user can see that analysis has completed.
+Route:
+
+/
+
+Do not add PDF export yet.
+
+Do not add account saving.
+
+Do not add report history.
 
 ---
 
 ## Visual Direction
 
-Preserve the current TradePilot visual system.
+Preserve the existing TradePilot visual language.
+
+The report should feel more data-dense than the Home page.
 
 Use:
 
-- white / light neutral background
-- navy / blue
-- subtle green for completed states
-- restrained borders
-- clear progress states
-- professional B2B SaaS styling
+- strong hierarchy
+- dashboard-style sections
+- clean tables
+- restrained cards
+- clear evidence labels
+- consistent navy / blue / neutral palette
+- subtle green where appropriate
+- readable spacing
 
 Avoid:
 
-- large animated spinners
-- flashy AI animations
-- neon effects
-- robot graphics
-- excessive motion
-- fake terminal/code animations
+- excessive whitespace that makes the report feel empty
+- giant marketing headlines
+- repetitive three-card landing-page layouts
+- excessive decoration
+- chatbot conversation UI
+- AI sparkle icons everywhere
 
-The workflow itself should be the main visual.
+This page should feel like an actual analytical work product.
 
 ---
 
-## Mobile Behaviour
+## Product Principle
 
-On mobile:
+Every important recommendation should be understandable through:
 
-- stack the analysis summary vertically
-- keep all workflow stages readable
-- preserve clear status hierarchy
-- avoid horizontal overflow
+Evidence
+→ Interpretation
+→ Action
+
+The page must make Data Fact and AI Inference visually distinct.
+
+Avoid unsupported statements.
+
+Do not imply real-time data.
+
+Do not imply the mock dataset is live marketplace data.
+
+---
+
+## Responsive Behaviour
+
+Desktop:
+
+Use a wide report layout suitable for data tables and analytical cards.
+
+Mobile:
+
+- stack sections vertically
+- allow competitor table to scroll horizontally if necessary
+- keep evidence labels readable
+- avoid horizontal page overflow
 
 ---
 
@@ -257,15 +696,18 @@ On mobile:
 
 Do not:
 
-- build the Market Report
 - connect an LLM
-- connect APIs
-- connect a database
-- add external services
-- modify Home
+- connect marketplace APIs
+- add a database
+- implement real scraping
+- implement PDF export
+- implement authentication
+- implement report saving
+- redesign Home
 - redesign Analysis Input
+- redesign Loading
 
-Use mock frontend logic only.
+Only build the Market Report and small reusable components needed by it.
 
 ---
 
@@ -273,14 +715,22 @@ Use mock frontend logic only.
 
 The task is complete when:
 
-- `/loading` contains the full AI analysis workflow
-- analysis stages progress automatically
-- the workflow completes within approximately 4–6 seconds
-- the user can see completed / processing / waiting states
-- Evidence-first logic is visible
-- View Market Report opens `/report`
+- /report contains all seven report sections
+- Executive Summary is visible
+- Data Fact and AI Inference are visually distinct
+- Market Snapshot metrics render correctly
+- customer needs and pain points are visible
+- competitor comparison is readable
+- three Market Opportunities follow Evidence → Inference → Business Implication
+- Risks & Limitations are clearly visible
+- Recommended Actions are concrete
+- Decision Summary is included
+- at least one evidence interaction works
+- Start New Analysis routes to /analysis
+- Back to Home routes to /
+- desktop layout works
 - mobile layout works
-- existing routes remain functional
+- all existing pages remain functional
 - TypeScript checks pass
 - production build passes
 - browser runtime smoke test passes
@@ -292,16 +742,17 @@ The task is complete when:
 
 1. Run TypeScript checks.
 2. Run the production build.
-3. Perform a browser runtime smoke test.
-4. Verify `/loading`.
-5. Verify the progress sequence.
-6. Verify View Market Report opens `/report`.
-7. Update CHANGELOG.md.
-8. Summarize:
+3. Perform browser runtime smoke tests.
+4. Verify /report on desktop and mobile.
+5. Verify evidence interaction.
+6. Verify /analysis and / navigation.
+7. Confirm previous pages remain unchanged.
+8. Update CHANGELOG.md.
+9. Summarize:
    - what changed
    - files modified
    - checks performed
    - remaining issues
-9. Stop.
+10. Stop.
 
-Do not automatically begin the Market Report page.
+Do not begin deployment or Case Study work automatically.
