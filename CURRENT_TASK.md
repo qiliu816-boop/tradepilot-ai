@@ -6,39 +6,34 @@ V0.1
 
 ## Current Stage
 
-Analysis Input Page Development
+AI Analysis Loading Page Development
 
 ## Objective
 
-Build the TradePilot market analysis input experience.
+Build the TradePilot AI analysis loading experience.
 
-The page should allow a user to define:
+The page should visually communicate how TradePilot transforms structured business inputs and market evidence into an evidence-backed market report.
 
-1. the product,
-2. the target market,
-3. basic business inputs,
-4. the market evidence used for analysis.
+This page is not a generic loading spinner.
 
-This is a portfolio demo.
-
-Use realistic default values so a recruiter can immediately test the complete flow without manually entering everything.
+It should demonstrate the product's AI workflow.
 
 ---
 
 ## Page Goal
 
-The page should feel like a structured market research brief, not a generic form.
-
 The user should understand:
 
-"What product am I analysing?"
-"Where do I want to sell it?"
-"What are my commercial assumptions?"
-"What evidence will TradePilot use?"
+1. what TradePilot is analysing,
+2. which stage of analysis is currently happening,
+3. how evidence is processed before AI interpretation,
+4. that the final report will distinguish data facts from AI inference.
+
+The page should feel like a professional analytics workflow.
 
 ---
 
-## Page Header
+## Header
 
 Eyebrow:
 
@@ -46,350 +41,215 @@ TRADEPILOT AI · MARKET ANALYSIS
 
 Heading:
 
-Set up your market analysis.
+Analysing your market opportunity.
 
 Supporting text:
 
-Define the product, target market and business context TradePilot should evaluate.
+TradePilot is structuring market evidence, identifying customer signals and generating evidence-backed business insights.
 
-Include a small progress indicator:
+---
+
+## Progress Indicator
+
+Show the existing three-stage product flow:
 
 01 Input
 02 Analyse
 03 Report
 
-Highlight Input as the current step.
+Highlight:
+
+02 Analyse
 
 ---
 
-## Layout
+## Analysis Summary
 
-Use a desktop two-column layout.
+Show a compact summary of the demo scenario:
 
-Left / Main Column:
-
-Input form.
-
-Right Column:
-
-Analysis Summary / Research Brief.
-
-The right-side summary should update visually based on the current form values where reasonable.
-
-On mobile, stack the sections vertically.
-
----
-
-## Section 1 — Product
-
-Card title:
-
-Product
-
-Supporting text:
-
-Tell TradePilot what product you want to evaluate.
-
-Fields:
-
-### Product Name
-
-Default:
-
+Product:
 Women's Commuter Tote Bag
 
-### Category
-
-Default:
-
-Bags & Accessories
-
-Suggested options:
-
-- Bags & Accessories
-- Beauty & Personal Care
-- Home & Living
-- Consumer Electronics
-- Fashion
-- Other
-
-### Product Description
-
-Default:
-
-Lightweight waterproof tote bag designed for commuting, daily use and laptop storage.
-
-Use a textarea.
-
----
-
-## Section 2 — Target Market
-
-Card title:
-
-Target Market
-
-Fields:
-
-### Country / Market
-
-Default:
-
+Market:
 Malaysia
 
-Suggested options:
-
-- Malaysia
-- Singapore
-- Thailand
-- Indonesia
-- Philippines
-- Vietnam
-
-### Platform
-
-Default:
-
+Platform:
 TikTok Shop
 
-Suggested options:
-
-- TikTok Shop
-- Shopee
-- Lazada
-- Amazon
-- Independent Store
-
-### Currency
-
-Default:
-
-MYR
-
-Currency may update automatically based on the selected default market, but keep the implementation simple.
-
----
-
-## Section 3 — Business Inputs
-
-Card title:
-
-Business Context
-
-Supporting text:
-
-Provide basic commercial assumptions for this market test.
-
-Fields:
-
-### Estimated Product Cost
-
-Default:
-
-35
-
-Prefix:
-
-RM
-
-### Target Selling Price
-
-Default:
-
-79
-
-Prefix:
-
-RM
-
-### Business Goal
-
-Use selectable cards or radio-style options.
-
-Options:
-
-- Market Entry
-- Product Validation
-- Pricing Strategy
-
-Default:
-
+Goal:
 Market Entry
 
----
-
-## Section 4 — Market Evidence
-
-Card title:
-
-Market Evidence
-
-Supporting text:
-
-TradePilot uses market evidence to support its analysis.
-
-For V0.1, do not implement real file processing.
-
-Instead show a preloaded demo dataset.
-
-Display:
-
-Sample Market Dataset
-
-Status:
-
-Ready
-
-Dataset summary:
-
-12 competitor products
-
-326 customer reviews
-
-Observed price range:
-RM49–RM129
-
-Source context:
-TikTok Shop Malaysia
-
-Add a small label:
-
-DEMO DATASET
-
-Add supporting text:
-
-This V0.1 demo uses a curated mock dataset to demonstrate the analysis workflow.
-
-Do not build real upload functionality yet.
-
-You may visually show a disabled or secondary:
-
-Upload your own dataset
-
-control with a label:
-
-Coming in V0.2
-
-but it must not become part of the active workflow.
-
----
-
-## Right-side Research Brief
-
-Create a summary card titled:
-
-Research Brief
-
-Show:
-
-Product
-
-Women's Commuter Tote Bag
-
-Market
-
-Malaysia
-
-Platform
-
-TikTok Shop
-
-Target Price
-
-RM79
-
-Goal
-
-Market Entry
-
-Evidence
-
+Evidence:
 12 competitors · 326 reviews
 
-At the bottom show:
-
-Ready for analysis
-
-This panel should make the page feel like a professional analytics product rather than a standard web form.
+This can appear as a compact horizontal card or small panel.
 
 ---
 
-## Primary CTA
+## AI Workflow
 
-Button:
+Create five analysis stages.
 
-Generate Market Report
+### Stage 1 — Reading Market Evidence
 
-On click:
+Supporting text:
 
-Navigate to:
+Reviewing competitor products, prices and customer feedback.
 
-/loading
-
-The button should be visually prominent.
-
-Below it show a small message:
-
-TradePilot will analyse the demo evidence and generate an evidence-backed opportunity report.
+Status:
+Complete
 
 ---
 
-## Secondary Navigation
+### Stage 2 — Extracting Customer Signals
 
-Include:
+Supporting text:
 
-Back to Home
+Identifying recurring customer needs, pain points and purchase signals.
 
-Do not add unnecessary buttons.
-
----
-
-## Validation
-
-Keep validation lightweight.
-
-Required:
-
-- Product Name
-- Target Market
-- Platform
-- Product Cost
-- Target Selling Price
-- Business Goal
-
-Do not build a complex validation library.
-
-Simple client-side validation is enough.
+Status:
+Complete
 
 ---
 
-## UX Requirements
+### Stage 3 — Comparing Competitors
 
-The page must:
+Supporting text:
 
-- work on desktop and mobile
-- use the existing TradePilot visual system
-- feel consistent with the Home page
-- preserve all existing routes
-- allow the default demo scenario to be submitted immediately
-- route Generate Market Report to `/loading`
+Structuring competitor positioning, pricing and product differentiation.
 
-Do not require users to manually fill the form before testing the demo.
+Status:
+Processing
 
 ---
 
-## Product Principle
+### Stage 4 — Evaluating Market Opportunity
 
-The page should reinforce that TradePilot analyses a structured business question.
+Supporting text:
 
-Avoid making it feel like:
+Connecting evidence to potential pricing, positioning and market-entry opportunities.
 
-- a generic AI prompt box
-- a chatbot
-- a long survey
-- a complex enterprise form
+Status:
+Waiting
 
-The interaction should feel simple, guided and decision-oriented.
+---
+
+### Stage 5 — Generating Recommendations
+
+Supporting text:
+
+Preparing evidence-backed actions, risks and limitations.
+
+Status:
+Waiting
+
+---
+
+## Visual Behaviour
+
+The page should simulate analysis progress.
+
+Use frontend-only timing.
+
+Example:
+
+Stage 1 complete
+→ Stage 2 complete
+→ Stage 3 processing
+→ Stage 4 processing
+→ Stage 5 processing
+→ Analysis complete
+
+Keep the total demo loading duration approximately:
+
+4–6 seconds.
+
+Do not use real API calls.
+
+Do not introduce backend services.
+
+---
+
+## Evidence Principle
+
+Include a compact explanatory component:
+
+### Evidence-first analysis
+
+Data facts are extracted before AI interpretation.
+
+Example:
+
+DATA FACT
+Median competitor price: RM79
+
+AI INFERENCE
+RM79 may represent a viable mid-market entry point.
+
+This should reinforce the Evidence Mechanism without duplicating the full Home page section.
+
+---
+
+## Completion State
+
+When all analysis stages finish:
+
+Change the main status to:
+
+Analysis complete.
+
+Supporting text:
+
+Your evidence-backed market opportunity report is ready.
+
+Primary button:
+
+View Market Report
+
+Route:
+
+/report
+
+Automatically navigating to `/report` is optional.
+
+Prefer showing the button first so the user can see that analysis has completed.
+
+---
+
+## Visual Direction
+
+Preserve the current TradePilot visual system.
+
+Use:
+
+- white / light neutral background
+- navy / blue
+- subtle green for completed states
+- restrained borders
+- clear progress states
+- professional B2B SaaS styling
+
+Avoid:
+
+- large animated spinners
+- flashy AI animations
+- neon effects
+- robot graphics
+- excessive motion
+- fake terminal/code animations
+
+The workflow itself should be the main visual.
+
+---
+
+## Mobile Behaviour
+
+On mobile:
+
+- stack the analysis summary vertically
+- keep all workflow stages readable
+- preserve clear status hierarchy
+- avoid horizontal overflow
 
 ---
 
@@ -397,16 +257,15 @@ The interaction should feel simple, guided and decision-oriented.
 
 Do not:
 
-- connect an API
-- upload real files
-- parse CSV files
+- build the Market Report
 - connect an LLM
-- build a database
-- build authentication
-- build the final Market Report
-- build complex state management
+- connect APIs
+- connect a database
+- add external services
+- modify Home
+- redesign Analysis Input
 
-Use local frontend state only where necessary.
+Use mock frontend logic only.
 
 ---
 
@@ -414,16 +273,18 @@ Use local frontend state only where necessary.
 
 The task is complete when:
 
-- the Analysis Input page contains all four input sections
-- realistic default demo values are populated
-- the Research Brief summary is visible
-- Generate Market Report routes to `/loading`
-- the page works on mobile
-- the Home page remains unchanged
-- all four application routes remain functional
+- `/loading` contains the full AI analysis workflow
+- analysis stages progress automatically
+- the workflow completes within approximately 4–6 seconds
+- the user can see completed / processing / waiting states
+- Evidence-first logic is visible
+- View Market Report opens `/report`
+- mobile layout works
+- existing routes remain functional
 - TypeScript checks pass
 - production build passes
-- the page renders correctly in the browser without blocking Console errors
+- browser runtime smoke test passes
+- no blocking Console errors remain
 
 ---
 
@@ -432,14 +293,15 @@ The task is complete when:
 1. Run TypeScript checks.
 2. Run the production build.
 3. Perform a browser runtime smoke test.
-4. Verify `/analysis` renders correctly.
-5. Verify Generate Market Report opens `/loading`.
-6. Update CHANGELOG.md.
-7. Summarize:
+4. Verify `/loading`.
+5. Verify the progress sequence.
+6. Verify View Market Report opens `/report`.
+7. Update CHANGELOG.md.
+8. Summarize:
    - what changed
    - files modified
    - checks performed
    - remaining issues
-8. Stop.
+9. Stop.
 
-Do not automatically begin the Loading page.
+Do not automatically begin the Market Report page.
