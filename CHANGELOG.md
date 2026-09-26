@@ -80,3 +80,10 @@
 - Development runtime smoke checks passed on all four routes. Production checks recorded no console errors/warnings or failed HTTP responses. Inspected responsive screenshots and measured each bar against its price, including median alignment, at all three sizes.
 - Files changed: `src/main.tsx`, `src/AnalysisPage.tsx`, `src/ReportPage.tsx`, `src/report.css`, `index.html`, `public/favicon.svg`, and `CHANGELOG.md`.
 - Remaining issue: the two harmless dependency build warnings described above. No blocking issues found within the tested local Edge environment. No new features, redesign, deployment, or Case Study work performed.
+
+### Median Reference Visual — 2026-09-26
+
+- Removed the special dark-blue styling from the two RM79 competitor bars so the median is marked only by its horizontal reference line and label. The chart already contained 12 bars; no data or bars were added or removed.
+- Preserved the exact competitor sequence: 49, 59, 59, 69, 75, 79, 79, 89, 99, 109, 119, 129. All other report layout and styling remain unchanged.
+- Passed `pnpm exec tsc --noEmit` and `pnpm build`; visually checked the production chart in Edge and verified exactly 12 uniformly styled competitor bars and one median line. Existing harmless React Router build warnings remain.
+- Files changed: `src/report.css` and `CHANGELOG.md`.

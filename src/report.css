@@ -47,7 +47,6 @@
 .report-price-column { display: flex; flex: 1; flex-direction: column; justify-content: end; align-items: center; height: 100%; position: relative; }
 .report-price-column span { position: absolute; bottom: var(--price-height); margin-bottom: 4px; font-size: .69rem; color: #526c80; }
 .report-price-column i { display: block; flex-shrink: 0; height: var(--price-height); width: 100%; max-width: 48px; background: #b3d2e7; border-radius: 3px 3px 0 0; }
-.report-price-column:nth-child(7) i, .report-price-column:nth-child(8) i { background: #3584b5; }
 .report-median-line { position: absolute; z-index: 1; left: 0; right: 0; border-top: 1px dashed #286c9a; pointer-events: none; }
 .report-median-line > span { position: absolute; top: 3px; right: 0; background: #f8fafc; color: #245f86; font-size: .66rem; font-weight: 700; padding: 3px 5px; }
 .report-customer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
